@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css2?family=Courgette&display=swap);
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+	font: normal normal 13px/16px "Open Sans", sans-serif;
+	background: #161623;
+  overflow: hidden;
+  align-items: center;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(#ffc107, #e91e63);
+  border-radius: 50%;
+  transform: translate(-250px, -120px);
+}
+
+section::after {
+  content: '';
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(#2196f3, #31ff38);
+  border-radius: 50%;
+  transform: translate(250px, 150px);
+}
+
+.box {
+	position: relative;
+  z-index: 10000;
+}
+
+.container {
+  width: 400px;
+  min-height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(25px);
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+  font-family: 'Courgette';
+}
+
+input {
+  position: relative;
+  border: none;
+  outline: none;
+  height: 20px;
+	padding: 4px 15px 4px 5px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25),
+  10px 10px 70px rgba(0, 0, 0, 0.1),
+  inset 2px 2px 5px rgba(255, 255, 255, 0.35),
+  inset -3px -3px 5px rgba(0, 0, 0, 0.5)
+}
+
+#button {
+	display: block;
+	background-color: #161623;
+	color: #ffffff;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 12px;
+  width: 100px;
+	padding: 5px 15px;
+  margin: auto;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.1),
+  10px 10px 70px rgba(0, 0, 0, 0.1),
+  inset 5px 5px 10px rgba(207, 200, 200, 0.011),
+  inset 5px 5px 20px rgba(255, 255, 255, 0.65),
+  inset -5px -5px 15px rgba(0, 0, 0, 0.75)
+}
+
+#button:hover {
+	cursor: pointer;
+	opacity: .8;
+}
+
+ol {
+	padding: 20px;
+}
+
+ol li {
+  position: relative;
+  display: flex;
+	padding: 10px;
+	color: #000;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.strike {
+	text-decoration: line-through;
+}
+
+li:hover {
+	background: linear-gradient(200deg, #f3eab5, #2196f3);
+  color: #000;
+  box-shadow: -15px 30px 50px rgba(0, 0, 0, 0.5);
+  transform: scale(1.15) translateX(15px) translateY(-15px);
+  z-index: 1000;
+}
+
+.delete {
+	display: none;
+}
+
+li > crossOutButton {
+	background: none;
+  position: absolute;
+  right: -50px;
+	color: #03a9f4;
+  transition: 0.5s;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+li:hover > crossOutButton {
+  right: 20px;
+}
+
+span {
+  color: #fff;
+  justify-self: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.1),
+  10px 10px 70px rgba(0, 0, 0, 0.1),
+  inset 5px 5px 10px rgba(207, 200, 200, 0.011),
+  inset 5px 5px 20px rgba(255, 255, 255, 0.65),
+  inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  font-size: 28px;
+}
+
+h2{
+  margin: 30px;
+}
+
+p {
+  color: #fff;
+}
