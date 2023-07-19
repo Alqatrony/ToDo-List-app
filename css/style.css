@@ -11,11 +11,9 @@ section {
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  <<<<<<< HEAD font: normal normal 13px/16px "Open Sans", sans-serif;
+  font: normal normal 13px/16px "Open Sans", sans-serif;
   background: #161623;
-  =======font: normal normal 13px/16px "Open Sans", sans-serif;
-  background: #161623;
-  >>>>>>>c2b06bc52a190fcaef80258452c243593be94643 overflow: hidden;
+  overflow: hidden;
   align-items: center;
 }
 
@@ -40,17 +38,14 @@ section::after {
 }
 
 .box {
-  <<<<<<< HEAD position: relative;
-  =======position: relative;
-  >>>>>>>c2b06bc52a190fcaef80258452c243593be94643 z-index: 10000;
+  position: relative;
+  z-index: 10000;
 }
 
 .container {
-  <<<<<<< HEAD width: 450px;
+  width: 450px;
   height: 550px;
-  =======width: 400px;
-  min-height: 400px;
-  >>>>>>>c2b06bc52a190fcaef80258452c243593be94643 background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
