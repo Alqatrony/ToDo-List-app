@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/ToDo-List-app-icon" href="img/favicon-32x32.png" />
+  <title>ToDo-List-app</title>
+</head>
+
+<body>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <p>Do you want to set a name for your list?</p>
+      <input id="listName" type="text" placeholder="Enter list name">
+      <div class="buttons">
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="box">
+      <div class="container">
+        <h2><span>To Do List App</span></h2>
+        <p>
+          <em>
+            Double click to mark an item off, click on "X" to delete an item,
+            and drag items to reorder.</em>
+        </p>
+
+        <form name="toDoList">
+          <input type="text" name="ListItem" id="input" placeholder="Enter list item...">
+          <select id="previousLists" style="display: none;"></select>
+        </form>
+
+        <div onclick="newItem()" id="button">Add</div>
+
+        <br />
+
+        <ol id="list">
+          <h3 id="listTitle"></h3>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+    integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
